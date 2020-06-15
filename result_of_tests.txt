@@ -1,0 +1,38 @@
+
+20 epochs
+Output of network:	 tensor([10.3766, 10.3255, 26.6291], device='cuda:0')
+Target Values:		 tensor([24.9045, 18.5798, 33.7064], device='cuda:0') 
+
+Output of network:	 tensor([16.5502,  0.4997,  5.8341], device='cuda:0')
+Target Values:		 tensor([6.1285, 0.0000, 0.0000], device='cuda:0') 
+
+Output of network:	 tensor([29.0302,  0.4407,  3.7836], device='cuda:0')
+Target Values:		 tensor([22.4361,  0.0000,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([29.5139, 15.9551,  2.1628], device='cuda:0')
+Target Values:		 tensor([32.4512,  5.3201,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([29.5012,  1.0054, 34.6910], device='cuda:0')
+Target Values:		 tensor([22.5501,  0.0000, 23.5579], device='cuda:0') 
+
+Test Loss (mean sqaured error): 4.127459
+
+
+100 epochs
+Output of network:	 tensor([ 5.6130,  0.4166, 27.9594], device='cuda:0')
+Target Values:		 tensor([ 8.3111,  0.0000, 23.8437], device='cuda:0') 
+
+Output of network:	 tensor([ 1.8706, 28.2158, -0.0577], device='cuda:0')
+Target Values:		 tensor([ 0.0000, 32.8453,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([23.0011, 35.5607, 27.9850], device='cuda:0')
+Target Values:		 tensor([25.7438, 28.8299, 28.6275], device='cuda:0') 
+
+Output of network:	 tensor([ 1.3547,  0.0993, 31.9204], device='cuda:0')
+Target Values:		 tensor([ 0.0000,  0.0000, 33.5934], device='cuda:0') 
+
+Output of network:	 tensor([ 0.0661, 37.2001,  0.1741], device='cuda:0')
+Target Values:		 tensor([ 0.0000, 38.5772,  0.0000], device='cuda:0') 
+
+Test Loss (mean sqaured error): 1.570137
+
