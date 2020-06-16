@@ -40,7 +40,7 @@ Test Loss (mean sqaured error): 1.570137
 ______________________________________________________________________________________
 
 
-4000 files; 20 epochs
+4000 files; 20 epochs; Convulutional Neural Network with Pytorch
 Output of network:	 tensor([ 0.0575, -0.3453,  0.5214], device='cuda:0')
 Target Values:		 tensor([0., 0., 0.], device='cuda:0') 
 
@@ -56,7 +56,7 @@ Target Values:		 tensor([0.0000, 7.9374, 0.0000], device='cuda:0')
 Output of network:	 tensor([ 2.1978,  0.5518, 17.4847], device='cuda:0')
 Target Values:		 tensor([ 0.0000,  0.0000, 18.6928], device='cuda:0') 
 
-Test Loss (mean sqaured error): 0.594762
+Test Loss (mean squared error): 0.594762
 
 Epoch #: 1
 Epoch: 1 	Training Loss: 31.362379 	Validation Loss: 21.266478
@@ -113,5 +113,4 @@ Epoch: 20 	Training Loss: 6.910050 	Validation Loss: 4.841070
 Validation loss decreased (5.250076 --> 4.841070).  Saving model ...
 Operation Complete
 
-Test Loss (mean sqaured error): 1.570137
 
