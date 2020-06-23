@@ -121,3 +121,1205 @@ ________________________________________________________________________________
 Test Loss (mean squared error): 0.88 
 # Validation loss and such VERY similar to 4,000 file output
 # These values are not copy pasted but recalled
+
+______________________________________________________________________________________
+6/16/20
+# Need to introduce lr adapter
+4000 files; 20 epochs; Added Conv2d layer 
+Output of network:	 tensor([0.2984, 4.6493, 0.2561], device='cuda:0')
+Target Values:		 tensor([0.0000, 4.3608, 0.0000], device='cuda:0') 
+
+Output of network:	 tensor([6.2791, 0.3044, 0.3572], device='cuda:0')
+Target Values:		 tensor([6.5412, 0.0000, 0.0000], device='cuda:0') 
+
+Output of network:	 tensor([20.4729,  1.2695, 19.5800], device='cuda:0')
+Target Values:		 tensor([20.8229,  8.8894, 19.2361], device='cuda:0') 
+
+Output of network:	 tensor([18.5785,  1.2695,  0.6122], device='cuda:0')
+Target Values:		 tensor([20.2907,  1.8238,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([18.7020,  0.1700, 18.3808], device='cuda:0')
+Target Values:		 tensor([17.3671,  0.0000, 19.5112], device='cuda:0') 
+
+Test Loss (mean squared error): 0.657747
+
+Epoch #: 1
+Epoch: 1 	Training Loss: 20.508316 	Validation Loss: 18.468690
+Validation loss decreased (inf --> 18.468690).  Saving model ...
+Time: 102.14977669715881
+Epoch #: 2
+Epoch: 2 	Training Loss: 18.737889 	Validation Loss: 15.228825
+Validation loss decreased (18.468690 --> 15.228825).  Saving model ...
+Time: 101.95528030395508
+Epoch #: 3
+Epoch: 3 	Training Loss: 17.211128 	Validation Loss: 15.732652
+Time: 100.76750588417053
+Epoch #: 4
+Epoch: 4 	Training Loss: 15.723672 	Validation Loss: 13.707280
+Validation loss decreased (15.228825 --> 13.707280).  Saving model ...
+Time: 101.67228770256042
+Epoch #: 5
+Epoch: 5 	Training Loss: 14.307049 	Validation Loss: 12.408559
+Validation loss decreased (13.707280 --> 12.408559).  Saving model ...
+Time: 105.25964379310608
+Epoch #: 6
+Epoch: 6 	Training Loss: 13.026634 	Validation Loss: 11.772025
+Validation loss decreased (12.408559 --> 11.772025).  Saving model ...
+Time: 104.2270359992981
+Epoch #: 7
+Epoch: 7 	Training Loss: 11.749746 	Validation Loss: 11.398620
+Validation loss decreased (11.772025 --> 11.398620).  Saving model ...
+Time: 102.87603712081909
+Epoch #: 8
+Epoch: 8 	Training Loss: 10.941583 	Validation Loss: 8.196448
+Validation loss decreased (11.398620 --> 8.196448).  Saving model ...
+Time: 106.30965614318848
+Epoch #: 9
+Epoch: 9 	Training Loss: 10.076948 	Validation Loss: 8.057975
+Validation loss decreased (8.196448 --> 8.057975).  Saving model ...
+Time: 104.9086503982544
+Epoch #: 10
+Epoch: 10 	Training Loss: 10.014760 	Validation Loss: 9.377474
+Time: 103.93430948257446
+Epoch #: 11
+Epoch: 11 	Training Loss: 8.952738 	Validation Loss: 7.533728
+Validation loss decreased (8.057975 --> 7.533728).  Saving model ...
+Time: 104.57252049446106
+Epoch #: 12
+Epoch: 12 	Training Loss: 8.954309 	Validation Loss: 8.281533
+Time: 103.37058591842651
+Epoch #: 13
+Epoch: 13 	Training Loss: 9.180201 	Validation Loss: 7.153247
+Validation loss decreased (7.533728 --> 7.153247).  Saving model ...
+Time: 108.50533938407898
+Epoch #: 14
+Epoch: 14 	Training Loss: 8.135498 	Validation Loss: 6.501647
+Validation loss decreased (7.153247 --> 6.501647).  Saving model ...
+Time: 106.57866549491882
+Epoch #: 15
+Epoch: 15 	Training Loss: 7.891221 	Validation Loss: 7.738662
+Time: 101.68677091598511
+Epoch #: 16
+Epoch: 16 	Training Loss: 7.527481 	Validation Loss: 6.039904
+Validation loss decreased (6.501647 --> 6.039904).  Saving model ...
+Time: 105.53318309783936
+Epoch #: 17
+Epoch: 17 	Training Loss: 7.224722 	Validation Loss: 6.133060
+Time: 105.06578707695007
+Epoch #: 18
+Epoch: 18 	Training Loss: 7.450193 	Validation Loss: 7.258805
+Time: 104.64162182807922
+Epoch #: 19
+Epoch: 19 	Training Loss: 6.673581 	Validation Loss: 5.799009
+Validation loss decreased (6.039904 --> 5.799009).  Saving model ...
+Time: 103.84825205802917
+Epoch #: 20
+Epoch: 20 	Training Loss: 7.069966 	Validation Loss: 6.149077
+Time: 102.19265174865723
+Epoch #: 21
+Epoch: 21 	Training Loss: 6.951546 	Validation Loss: 5.557715
+Validation loss decreased (5.799009 --> 5.557715).  Saving model ...
+Time: 97.75204563140869
+Epoch #: 22
+Epoch: 22 	Training Loss: 7.090261 	Validation Loss: 5.429841
+Validation loss decreased (5.557715 --> 5.429841).  Saving model ...
+Time: 97.75354790687561
+Epoch #: 23
+Epoch: 23 	Training Loss: 6.629644 	Validation Loss: 7.565959
+Time: 97.02946329116821
+Epoch #: 24
+Epoch: 24 	Training Loss: 6.513009 	Validation Loss: 6.495993
+Time: 97.11273002624512
+Epoch #: 25
+Epoch: 25 	Training Loss: 6.929850 	Validation Loss: 5.131493
+Validation loss decreased (5.429841 --> 5.131493).  Saving model ...
+Time: 97.40299773216248
+Epoch #: 26
+Epoch: 26 	Training Loss: 6.179801 	Validation Loss: 6.305697
+Time: 96.90778875350952
+Epoch #: 27
+Epoch: 27 	Training Loss: 6.383649 	Validation Loss: 5.485933
+Time: 97.13767743110657
+Epoch #: 28
+Epoch: 28 	Training Loss: 6.609017 	Validation Loss: 7.402903
+Time: 97.17058849334717
+Epoch #: 29
+Epoch: 29 	Training Loss: 6.426339 	Validation Loss: 5.137759
+Time: 97.14864754676819
+Epoch #: 30
+Epoch: 30 	Training Loss: 6.321073 	Validation Loss: 6.493046
+Time: 97.16360664367676
+Epoch #: 31
+Epoch: 31 	Training Loss: 5.896415 	Validation Loss: 5.561736
+Time: 97.18903160095215
+Epoch #: 32
+Epoch: 32 	Training Loss: 6.137144 	Validation Loss: 4.792579
+Validation loss decreased (5.131493 --> 4.792579).  Saving model ...
+Time: 97.45032596588135
+Epoch #: 33
+Epoch: 33 	Training Loss: 6.129657 	Validation Loss: 4.711627
+Validation loss decreased (4.792579 --> 4.711627).  Saving model ...
+Time: 96.87985157966614
+Epoch #: 34
+Epoch: 34 	Training Loss: 6.028089 	Validation Loss: 7.342703
+Time: 97.10124206542969
+Epoch #: 35
+Epoch: 35 	Training Loss: 6.017403 	Validation Loss: 4.785486
+Time: 98.86353993415833
+Epoch #: 36
+Epoch: 36 	Training Loss: 6.069400 	Validation Loss: 5.343108
+Time: 97.47028660774231
+Epoch #: 37
+Epoch: 37 	Training Loss: 6.118585 	Validation Loss: 4.773278
+Time: 97.24388599395752
+Epoch #: 38
+Epoch: 38 	Training Loss: 6.114107 	Validation Loss: 5.147306
+Time: 98.42423462867737
+Epoch #: 39
+Epoch: 39 	Training Loss: 5.411554 	Validation Loss: 4.822611
+Time: 100.98289775848389
+Epoch #: 40
+Epoch: 40 	Training Loss: 6.120913 	Validation Loss: 5.124250
+Time: 99.80553865432739
+Operation Complete
+
+6/16/20
+lr = 0.002 Similar train/val loss from previous
+# Need to introduce lr adapter
+4000 files; 20 epochs; changed lr to 0.002
+Output of network:	 tensor([ 0.7194, -0.0512,  1.4150], device='cuda:0')
+Target Values:		 tensor([0., 0., 0.], device='cuda:0') 
+
+Output of network:	 tensor([11.3930,  6.2581, 12.1200], device='cuda:0')
+Target Values:		 tensor([12.4037,  2.3693, 13.4497], device='cuda:0') 
+
+Output of network:	 tensor([0.3122, 0.2688, 0.0950], device='cuda:0')
+Target Values:		 tensor([0., 0., 0.], device='cuda:0') 
+
+Output of network:	 tensor([3.4922, 0.8504, 7.5734], device='cuda:0')
+Target Values:		 tensor([0.0000, 0.0000, 9.5560], device='cuda:0') 
+
+Output of network:	 tensor([17.0503,  0.6218, 16.4929], device='cuda:0')
+Target Values:		 tensor([19.7547,  0.0000, 19.5854], device='cuda:0') 
+
+Test Loss (mean squared error): 0.852004
+
+______________________________________________________________________________________
+6/16/20
+# scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma = 0.95)
+4000 files; 40 epochs; Added scheduler
+Output of network:	 tensor([18.9497,  0.0876,  1.4022], device='cuda:0')
+Target Values:		 tensor([19.5854,  0.0000,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([8.2728, 0.9774, 4.3568], device='cuda:0')
+Target Values:		 tensor([10.1837,  0.0000,  6.7951], device='cuda:0') 
+
+Output of network:	 tensor([19.1209, 17.2463,  0.0574], device='cuda:0')
+Target Values:		 tensor([19.8517, 18.9526,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([ 0.0708, -0.0495,  0.7833], device='cuda:0')
+Target Values:		 tensor([0., 0., 0.], device='cuda:0') 
+
+Output of network:	 tensor([ 0.0314, 12.6417, 19.6026], device='cuda:0')
+Target Values:		 tensor([ 0.0000, 13.1488, 25.0718], device='cuda:0') 
+
+Test Loss (mean squared error): 0.580134
+
+0.001
+Epoch #: 1
+Epoch: 1 	Training Loss: 29.822089 	Validation Loss: 21.088321
+Validation loss decreased (inf --> 21.088321).  Saving model ...
+Time: 98.32431840896606
+0.00095
+Epoch #: 2
+Epoch: 2 	Training Loss: 22.917971 	Validation Loss: 17.503020
+Validation loss decreased (21.088321 --> 17.503020).  Saving model ...
+Time: 98.60887908935547
+0.0009025
+Epoch #: 3
+Epoch: 3 	Training Loss: 19.227242 	Validation Loss: 16.901513
+Validation loss decreased (17.503020 --> 16.901513).  Saving model ...
+Time: 98.44931435585022
+0.000857375
+Epoch #: 4
+Epoch: 4 	Training Loss: 17.091847 	Validation Loss: 13.964297
+Validation loss decreased (16.901513 --> 13.964297).  Saving model ...
+Time: 98.34649729728699
+0.0008145062499999999
+Epoch #: 5
+Epoch: 5 	Training Loss: 14.340410 	Validation Loss: 14.917561
+Time: 98.20510387420654
+0.0007737809374999998
+Epoch #: 6
+Epoch: 6 	Training Loss: 12.817817 	Validation Loss: 11.116832
+Validation loss decreased (13.964297 --> 11.116832).  Saving model ...
+Time: 99.01469898223877
+0.0007350918906249997
+Epoch #: 7
+Epoch: 7 	Training Loss: 11.308321 	Validation Loss: 8.946623
+Validation loss decreased (11.116832 --> 8.946623).  Saving model ...
+Time: 98.7026469707489
+0.0006983372960937497
+Epoch #: 8
+Epoch: 8 	Training Loss: 10.582518 	Validation Loss: 7.935218
+Validation loss decreased (8.946623 --> 7.935218).  Saving model ...
+Time: 98.39906525611877
+0.0006634204312890621
+Epoch #: 9
+Epoch: 9 	Training Loss: 9.332995 	Validation Loss: 8.957411
+Time: 97.94618701934814
+0.000630249409724609
+Epoch #: 10
+Epoch: 10 	Training Loss: 8.814064 	Validation Loss: 6.928790
+Validation loss decreased (7.935218 --> 6.928790).  Saving model ...
+Time: 98.22355651855469
+0.0005987369392383785
+Epoch #: 11
+Epoch: 11 	Training Loss: 8.239869 	Validation Loss: 7.674413
+Time: 97.79946160316467
+0.0005688000922764595
+Epoch #: 12
+Epoch: 12 	Training Loss: 7.506344 	Validation Loss: 8.358045
+Time: 97.82996153831482
+0.0005403600876626365
+Epoch #: 13
+Epoch: 13 	Training Loss: 7.137808 	Validation Loss: 5.883633
+Validation loss decreased (6.928790 --> 5.883633).  Saving model ...
+Time: 98.3892707824707
+0.0005133420832795047
+Epoch #: 14
+Epoch: 14 	Training Loss: 6.856660 	Validation Loss: 5.899025
+Time: 97.8722710609436
+0.00048767497911552944
+Epoch #: 15
+Epoch: 15 	Training Loss: 6.456244 	Validation Loss: 6.790969
+Time: 101.58081412315369
+0.00046329123015975297
+Epoch #: 16
+Epoch: 16 	Training Loss: 6.167305 	Validation Loss: 5.809265
+Validation loss decreased (5.883633 --> 5.809265).  Saving model ...
+Time: 98.66523289680481
+0.0004401266686517653
+Epoch #: 17
+Epoch: 17 	Training Loss: 5.892386 	Validation Loss: 6.465043
+Time: 97.74770474433899
+0.00041812033521917703
+Epoch #: 18
+Epoch: 18 	Training Loss: 5.766956 	Validation Loss: 5.853259
+Time: 98.33661150932312
+0.00039721431845821814
+Epoch #: 19
+Epoch: 19 	Training Loss: 5.442988 	Validation Loss: 5.592132
+Validation loss decreased (5.809265 --> 5.592132).  Saving model ...
+Time: 99.89840149879456
+0.0003773536025353072
+Epoch #: 20
+Epoch: 20 	Training Loss: 5.487471 	Validation Loss: 5.005958
+Validation loss decreased (5.592132 --> 5.005958).  Saving model ...
+Time: 100.79243183135986
+0.0003584859224085418
+Epoch #: 21
+Epoch: 21 	Training Loss: 5.441152 	Validation Loss: 4.942126
+Validation loss decreased (5.005958 --> 4.942126).  Saving model ...
+Time: 100.39368677139282
+0.0003405616262881147
+Epoch #: 22
+Epoch: 22 	Training Loss: 5.278434 	Validation Loss: 4.639377
+Validation loss decreased (4.942126 --> 4.639377).  Saving model ...
+Time: 99.84805679321289
+0.00032353354497370894
+Epoch #: 23
+Epoch: 23 	Training Loss: 5.027294 	Validation Loss: 4.855337
+Time: 99.62885975837708
+0.00030735686772502346
+Epoch #: 24
+Epoch: 24 	Training Loss: 5.018711 	Validation Loss: 5.228151
+Time: 101.05694031715393
+0.00029198902433877225
+Epoch #: 25
+Epoch: 25 	Training Loss: 4.716789 	Validation Loss: 5.036531
+Time: 101.04349756240845
+0.00027738957312183364
+Epoch #: 26
+Epoch: 26 	Training Loss: 4.700369 	Validation Loss: 4.963864
+Time: 99.46866631507874
+0.0002635200944657419
+Epoch #: 27
+Epoch: 27 	Training Loss: 4.948198 	Validation Loss: 4.697882
+Time: 100.36781048774719
+0.0002503440897424548
+Epoch #: 28
+Epoch: 28 	Training Loss: 4.505577 	Validation Loss: 4.873059
+Time: 98.24695491790771
+0.00023782688525533205
+Epoch #: 29
+Epoch: 29 	Training Loss: 4.651181 	Validation Loss: 4.509997
+Validation loss decreased (4.639377 --> 4.509997).  Saving model ...
+Time: 98.18745064735413
+0.00022593554099256544
+Epoch #: 30
+Epoch: 30 	Training Loss: 4.663131 	Validation Loss: 4.343923
+Validation loss decreased (4.509997 --> 4.343923).  Saving model ...
+Time: 98.76209616661072
+0.00021463876394293716
+Epoch #: 31
+Epoch: 31 	Training Loss: 4.486696 	Validation Loss: 4.402159
+Time: 97.81605410575867
+0.0002039068257457903
+Epoch #: 32
+Epoch: 32 	Training Loss: 4.352717 	Validation Loss: 4.600044
+Time: 98.01590991020203
+0.00019371148445850077
+Epoch #: 33
+Epoch: 33 	Training Loss: 4.394617 	Validation Loss: 4.339864
+Validation loss decreased (4.343923 --> 4.339864).  Saving model ...
+Time: 98.49668478965759
+0.00018402591023557573
+Epoch #: 34
+Epoch: 34 	Training Loss: 4.230159 	Validation Loss: 4.274836
+Validation loss decreased (4.339864 --> 4.274836).  Saving model ...
+Time: 98.26272344589233
+0.00017482461472379692
+Epoch #: 35
+Epoch: 35 	Training Loss: 4.387754 	Validation Loss: 4.447142
+Time: 98.13348841667175
+0.00016608338398760707
+Epoch #: 36
+Epoch: 36 	Training Loss: 4.260292 	Validation Loss: 4.241167
+Validation loss decreased (4.274836 --> 4.241167).  Saving model ...
+Time: 98.2663643360138
+0.0001577792147882267
+Epoch #: 37
+Epoch: 37 	Training Loss: 4.309286 	Validation Loss: 3.974372
+Validation loss decreased (4.241167 --> 3.974372).  Saving model ...
+Time: 98.25024771690369
+0.00014989025404881537
+Epoch #: 38
+Epoch: 38 	Training Loss: 4.132056 	Validation Loss: 4.006015
+Time: 97.86519694328308
+0.00014239574134637458
+Epoch #: 39
+Epoch: 39 	Training Loss: 3.965995 	Validation Loss: 3.986847
+Time: 97.90092968940735
+0.00013527595427905584
+Epoch #: 40
+Epoch: 40 	Training Loss: 3.948134 	Validation Loss: 4.324369
+Time: 98.50156760215759
+Operation Complete
+
+______________________________________________________________________________________
+6/16/20
+# scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma = 0.95)
+4000 files; 40 epochs; Scheduler works only after epoch 10
+
+Output of network:	 tensor([ 0.3435, 18.3413, 13.2781], device='cuda:0')
+Target Values:		 tensor([ 0.0000, 18.6088, 14.0579], device='cuda:0') 
+
+Output of network:	 tensor([0.5886, 0.9300, 1.1507], device='cuda:0')
+Target Values:		 tensor([0.0000, 0.2538, 2.3240], device='cuda:0') 
+
+Output of network:	 tensor([14.6019,  1.2118,  0.0692], device='cuda:0')
+Target Values:		 tensor([17.7358,  0.0000,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([ 0.0771, 14.5638, -0.0208], device='cuda:0')
+Target Values:		 tensor([ 0.0000, 14.7898,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([ 1.9546, -0.2868, 20.9225], device='cuda:0')
+Target Values:		 tensor([ 3.7607,  0.0000, 25.7517], device='cuda:0') 
+
+Test Loss (mean squared error): 0.464112
+
+0.001
+Epoch #: 1
+Epoch: 1 	Training Loss: 31.259487 	Validation Loss: 23.678528
+Validation loss decreased (inf --> 23.678528).  Saving model ...
+Time: 106.76274967193604
+0.001
+Epoch #: 2
+Epoch: 2 	Training Loss: 21.786924 	Validation Loss: 19.653138
+Validation loss decreased (23.678528 --> 19.653138).  Saving model ...
+Time: 103.43070244789124
+0.001
+Epoch #: 3
+Epoch: 3 	Training Loss: 18.581589 	Validation Loss: 22.179988
+Time: 103.72738027572632
+0.001
+Epoch #: 4
+Epoch: 4 	Training Loss: 14.672281 	Validation Loss: 14.532180
+Validation loss decreased (19.653138 --> 14.532180).  Saving model ...
+Time: 103.85995030403137
+0.001
+Epoch #: 5
+Epoch: 5 	Training Loss: 12.710197 	Validation Loss: 14.454641
+Validation loss decreased (14.532180 --> 14.454641).  Saving model ...
+Time: 103.50961422920227
+0.001
+Epoch #: 6
+Epoch: 6 	Training Loss: 11.664117 	Validation Loss: 11.159672
+Validation loss decreased (14.454641 --> 11.159672).  Saving model ...
+Time: 104.36837363243103
+0.001
+Epoch #: 7
+Epoch: 7 	Training Loss: 9.361587 	Validation Loss: 9.434131
+Validation loss decreased (11.159672 --> 9.434131).  Saving model ...
+Time: 107.50387740135193
+0.001
+Epoch #: 8
+Epoch: 8 	Training Loss: 9.121218 	Validation Loss: 7.972764
+Validation loss decreased (9.434131 --> 7.972764).  Saving model ...
+Time: 105.03896403312683
+0.001
+Epoch #: 9
+Epoch: 9 	Training Loss: 8.344876 	Validation Loss: 9.326765
+Time: 103.75562405586243
+0.001
+Epoch #: 10
+Epoch: 10 	Training Loss: 8.410312 	Validation Loss: 7.407222
+Validation loss decreased (7.972764 --> 7.407222).  Saving model ...
+Time: 104.6619119644165
+0.00095
+Epoch #: 11
+Epoch: 11 	Training Loss: 7.743359 	Validation Loss: 6.770658
+Validation loss decreased (7.407222 --> 6.770658).  Saving model ...
+Time: 104.11149024963379
+0.0009025
+Epoch #: 12
+Epoch: 12 	Training Loss: 7.405800 	Validation Loss: 5.702856
+Validation loss decreased (6.770658 --> 5.702856).  Saving model ...
+Time: 103.96916484832764
+0.000857375
+Epoch #: 13
+Epoch: 13 	Training Loss: 6.832828 	Validation Loss: 7.761787
+Time: 103.63861465454102
+0.0008145062499999999
+Epoch #: 14
+Epoch: 14 	Training Loss: 7.001821 	Validation Loss: 6.014475
+Time: 103.96484589576721
+0.0007737809374999998
+Epoch #: 15
+Epoch: 15 	Training Loss: 6.906010 	Validation Loss: 5.601858
+Validation loss decreased (5.702856 --> 5.601858).  Saving model ...
+Time: 104.67124485969543
+0.0007350918906249997
+Epoch #: 16
+Epoch: 16 	Training Loss: 6.681496 	Validation Loss: 4.691271
+Validation loss decreased (5.601858 --> 4.691271).  Saving model ...
+Time: 103.68007779121399
+0.0006983372960937497
+Epoch #: 17
+Epoch: 17 	Training Loss: 5.970852 	Validation Loss: 5.607449
+Time: 103.53603672981262
+0.0006634204312890621
+Epoch #: 18
+Epoch: 18 	Training Loss: 6.429647 	Validation Loss: 4.906113
+Time: 103.87896633148193
+0.000630249409724609
+Epoch #: 19
+Epoch: 19 	Training Loss: 5.983323 	Validation Loss: 5.189522
+Time: 105.1422336101532
+0.0005987369392383785
+Epoch #: 20
+Epoch: 20 	Training Loss: 5.836396 	Validation Loss: 4.446905
+Validation loss decreased (4.691271 --> 4.446905).  Saving model ...
+Time: 104.21109008789062
+0.0005688000922764595
+Epoch #: 21
+Epoch: 21 	Training Loss: 5.660030 	Validation Loss: 4.423627
+Validation loss decreased (4.446905 --> 4.423627).  Saving model ...
+Time: 103.63398909568787
+0.0005403600876626365
+Epoch #: 22
+Epoch: 22 	Training Loss: 5.642381 	Validation Loss: 4.354031
+Validation loss decreased (4.423627 --> 4.354031).  Saving model ...
+Time: 101.95500111579895
+0.0005133420832795047
+Epoch #: 23
+Epoch: 23 	Training Loss: 5.399147 	Validation Loss: 4.301611
+Validation loss decreased (4.354031 --> 4.301611).  Saving model ...
+Time: 97.28575015068054
+0.00048767497911552944
+Epoch #: 24
+Epoch: 24 	Training Loss: 5.621024 	Validation Loss: 4.193341
+Validation loss decreased (4.301611 --> 4.193341).  Saving model ...
+Time: 97.33263635635376
+0.00046329123015975297
+Epoch #: 25
+Epoch: 25 	Training Loss: 5.159179 	Validation Loss: 4.212161
+Time: 97.29174494743347
+0.0004401266686517653
+Epoch #: 26
+Epoch: 26 	Training Loss: 5.012772 	Validation Loss: 4.545695
+Time: 97.15810298919678
+0.00041812033521917703
+Epoch #: 27
+Epoch: 27 	Training Loss: 4.962140 	Validation Loss: 3.771999
+Validation loss decreased (4.193341 --> 3.771999).  Saving model ...
+Time: 97.38159132003784
+Operation Complete
+
+______________________________________________________________________________________
+6/16/20
+# scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma = 0.95)
+4000 files; 60 epochs; Scheduler works only after epoch 15
+
+Output of network:	 tensor([ 0.3590,  0.4284, 17.6259], device='cuda:0')
+Target Values:		 tensor([ 0.0000,  0.0000, 18.4663], device='cuda:0') 
+
+Output of network:	 tensor([ 9.2877, 24.1214,  0.7128], device='cuda:0')
+Target Values:		 tensor([ 9.5560, 20.8816,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([0.4632, 0.2118, 0.8625], device='cuda:0')
+Target Values:		 tensor([0., 0., 0.], device='cuda:0') 
+
+Output of network:	 tensor([0.3224, 1.5465, 0.3856], device='cuda:0')
+Target Values:		 tensor([0.0000, 9.9688, 0.0000], device='cuda:0') 
+
+Output of network:	 tensor([ 0.0341, 15.0026,  0.0866], device='cuda:0')
+Target Values:		 tensor([ 0.0000, 17.6463,  0.0000], device='cuda:0') 
+
+Test Loss (mean squared error): 0.605154
+
+
+{
+	0.001
+	Epoch #: 1
+	Epoch: 1 	Training Loss: 32.424423 	Validation Loss: 24.757639
+	Validation loss decreased (inf --> 24.757639).  Saving model ...
+	Time: 98.21826648712158
+	0.001
+	Epoch #: 2
+	Epoch: 2 	Training Loss: 24.536132 	Validation Loss: 32.829402
+	Time: 97.64779210090637
+	0.001
+	Epoch #: 3
+	Epoch: 3 	Training Loss: 21.780908 	Validation Loss: 16.506642
+	Validation loss decreased (24.757639 --> 16.506642).  Saving model ...
+	Time: 97.56503009796143
+	0.001
+	Epoch #: 4
+	Epoch: 4 	Training Loss: 16.911704 	Validation Loss: 11.235959
+	Validation loss decreased (16.506642 --> 11.235959).  Saving model ...
+	Time: 97.76799011230469
+	0.001
+	Epoch #: 5
+	Epoch: 5 	Training Loss: 14.045832 	Validation Loss: 9.675986
+	Validation loss decreased (11.235959 --> 9.675986).  Saving model ...
+	Time: 97.56952047348022
+	0.001
+	Epoch #: 6
+	Epoch: 6 	Training Loss: 12.369927 	Validation Loss: 8.516883
+	Validation loss decreased (9.675986 --> 8.516883).  Saving model ...
+	Time: 97.50817704200745
+	0.001
+	Epoch #: 7
+	Epoch: 7 	Training Loss: 11.424853 	Validation Loss: 7.321664
+	Validation loss decreased (8.516883 --> 7.321664).  Saving model ...
+	Time: 97.68321800231934
+	0.001
+	Epoch #: 8
+	Epoch: 8 	Training Loss: 10.634168 	Validation Loss: 6.866754
+	Validation loss decreased (7.321664 --> 6.866754).  Saving model ...
+	Time: 97.68157720565796
+	0.001
+	Epoch #: 9
+	Epoch: 9 	Training Loss: 9.625124 	Validation Loss: 5.813123
+	Validation loss decreased (6.866754 --> 5.813123).  Saving model ...
+	Time: 97.64531898498535
+	0.001
+	Epoch #: 10
+	Epoch: 10 	Training Loss: 9.448633 	Validation Loss: 5.565760
+	Validation loss decreased (5.813123 --> 5.565760).  Saving model ...
+	Time: 97.7370707988739
+	0.001
+	Epoch #: 11
+	Epoch: 11 	Training Loss: 8.693882 	Validation Loss: 5.083572
+	Validation loss decreased (5.565760 --> 5.083572).  Saving model ...
+	Time: 97.60941410064697
+	0.001
+	Epoch #: 12
+	Epoch: 12 	Training Loss: 8.695288 	Validation Loss: 4.752331
+	Validation loss decreased (5.083572 --> 4.752331).  Saving model ...
+	Time: 97.65928101539612
+	0.001
+	Epoch #: 13
+	Epoch: 13 	Training Loss: 8.342650 	Validation Loss: 5.186938
+	Time: 97.71712613105774
+	0.001
+	Epoch #: 14
+	Epoch: 14 	Training Loss: 8.162514 	Validation Loss: 5.274451
+	Time: 97.45831179618835
+	0.001
+	Epoch #: 15
+	Epoch: 15 	Training Loss: 7.823183 	Validation Loss: 5.354886
+	Time: 97.57200765609741
+	0.00095
+	Epoch #: 16
+	Epoch: 16 	Training Loss: 7.771833 	Validation Loss: 5.945915
+	Time: 97.60892248153687
+	0.0009025
+	Epoch #: 17
+	Epoch: 17 	Training Loss: 7.799487 	Validation Loss: 8.097659
+	Time: 97.58448147773743
+	0.000857375
+	Epoch #: 18
+	Epoch: 18 	Training Loss: 7.469927 	Validation Loss: 4.076754
+	Validation loss decreased (4.752331 --> 4.076754).  Saving model ...
+	Time: 97.5894684791565
+	0.0008145062499999999
+	Epoch #: 19
+	Epoch: 19 	Training Loss: 6.888486 	Validation Loss: 4.804039
+	Time: 97.6228711605072
+	0.0007737809374999998
+	Epoch #: 20
+	Epoch: 20 	Training Loss: 7.263809 	Validation Loss: 3.888561
+	Validation loss decreased (4.076754 --> 3.888561).  Saving model ...
+	Time: 97.58398818969727
+	0.0007350918906249997
+	Epoch #: 21
+	Epoch: 21 	Training Loss: 7.022788 	Validation Loss: 3.639877
+	Validation loss decreased (3.888561 --> 3.639877).  Saving model ...
+	Time: 97.64132761955261
+	0.0006983372960937497
+	Epoch #: 22
+	Epoch: 22 	Training Loss: 6.689140 	Validation Loss: 4.983284
+	Time: 97.6213800907135
+	0.0006634204312890621
+	Epoch #: 23
+	Epoch: 23 	Training Loss: 7.051953 	Validation Loss: 4.123694
+	Time: 98.2282657623291
+	0.000630249409724609
+	Epoch #: 24
+	Epoch: 24 	Training Loss: 6.731271 	Validation Loss: 3.713733
+	Time: 98.10209822654724
+	0.0005987369392383785
+	Epoch #: 25
+	Epoch: 25 	Training Loss: 6.458404 	Validation Loss: 3.595078
+	Validation loss decreased (3.639877 --> 3.595078).  Saving model ...
+	Time: 105.13714671134949
+	0.0005688000922764595
+	Epoch #: 26
+	Epoch: 26 	Training Loss: 6.277924 	Validation Loss: 4.072848
+	Time: 104.7281322479248
+	0.0005403600876626365
+	Epoch #: 27
+	Epoch: 27 	Training Loss: 6.342034 	Validation Loss: 3.311783
+	Validation loss decreased (3.595078 --> 3.311783).  Saving model ...
+	Time: 106.69046998023987
+	0.0005133420832795047
+	Epoch #: 28
+	Epoch: 28 	Training Loss: 6.171321 	Validation Loss: 3.517365
+	Time: 101.05480647087097
+	0.00048767497911552944
+	Epoch #: 29
+	Epoch: 29 	Training Loss: 6.376297 	Validation Loss: 4.280230
+	Time: 98.9902138710022
+	0.00046329123015975297
+	Epoch #: 30
+	Epoch: 30 	Training Loss: 5.692558 	Validation Loss: 3.631959
+	Time: 98.94085216522217
+	0.0004401266686517653
+	Epoch #: 31
+	Epoch: 31 	Training Loss: 5.816983 	Validation Loss: 3.316920
+	Time: 98.58330178260803
+	0.00041812033521917703
+	Epoch #: 32
+	Epoch: 32 	Training Loss: 5.895277 	Validation Loss: 3.127771
+	Validation loss decreased (3.311783 --> 3.127771).  Saving model ...
+	Time: 98.45166850090027
+	0.00039721431845821814
+	Epoch #: 33
+	Epoch: 33 	Training Loss: 5.639015 	Validation Loss: 3.078621
+	Validation loss decreased (3.127771 --> 3.078621).  Saving model ...
+	Time: 98.77030825614929
+	0.0003773536025353072
+	Epoch #: 34
+	Epoch: 34 	Training Loss: 5.940808 	Validation Loss: 3.275485
+	Time: 98.83314061164856
+	0.0003584859224085418
+	Epoch #: 35
+	Epoch: 35 	Training Loss: 5.577308 	Validation Loss: 2.779241
+	Validation loss decreased (3.078621 --> 2.779241).  Saving model ...
+	Time: 98.77380537986755
+	0.0003405616262881147
+	Epoch #: 36
+	Epoch: 36 	Training Loss: 5.788574 	Validation Loss: 3.269387
+	Time: 98.85209083557129
+	0.00032353354497370894
+	Epoch #: 37
+	Epoch: 37 	Training Loss: 5.625566 	Validation Loss: 2.820731
+	Time: 98.94384479522705
+	0.00030735686772502346
+	Epoch #: 38
+	Epoch: 38 	Training Loss: 5.705559 	Validation Loss: 2.913593
+	Time: 98.78477549552917
+	0.00029198902433877225
+	Epoch #: 39
+	Epoch: 39 	Training Loss: 5.165089 	Validation Loss: 2.904535
+	Time: 98.87751722335815
+	0.00027738957312183364
+	Epoch #: 40
+	Epoch: 40 	Training Loss: 5.175365 	Validation Loss: 3.140913
+	Time: 98.7733006477356
+	0.0002635200944657419
+	Epoch #: 41
+	Epoch: 41 	Training Loss: 5.221713 	Validation Loss: 3.283865
+	Time: 98.81319427490234
+	0.0002503440897424548
+	Epoch #: 42
+	Epoch: 42 	Training Loss: 5.164804 	Validation Loss: 3.157279
+	Time: 98.82615971565247
+	0.00023782688525533205
+	Epoch #: 43
+	Epoch: 43 	Training Loss: 5.317451 	Validation Loss: 3.239623
+	Time: 100.95154476165771
+	0.00022593554099256544
+	Epoch #: 44
+	Epoch: 44 	Training Loss: 5.155335 	Validation Loss: 2.966099
+	Time: 105.10054159164429
+	0.00021463876394293716
+	Epoch #: 45
+	Epoch: 45 	Training Loss: 5.278237 	Validation Loss: 2.879030
+	Time: 103.17213344573975
+	0.0002039068257457903
+	Epoch #: 46
+	Epoch: 46 	Training Loss: 5.259452 	Validation Loss: 3.048423
+	Time: 103.25544548034668
+	0.00019371148445850077
+	Epoch #: 47
+	Epoch: 47 	Training Loss: 5.181240 	Validation Loss: 3.040806
+	Time: 102.53182244300842
+	0.00018402591023557573
+	Epoch #: 48
+	Epoch: 48 	Training Loss: 5.182297 	Validation Loss: 2.718144
+	Validation loss decreased (2.779241 --> 2.718144).  Saving model ...
+	Time: 101.37681698799133
+	0.00017482461472379692
+	Epoch #: 49
+	Epoch: 49 	Training Loss: 5.112762 	Validation Loss: 2.898867
+	Time: 98.73987197875977
+	0.00016608338398760707
+	Epoch #: 50
+	Epoch: 50 	Training Loss: 5.162170 	Validation Loss: 2.600804
+	Validation loss decreased (2.718144 --> 2.600804).  Saving model ...
+	Time: 99.55570650100708
+	0.0001577792147882267
+	Epoch #: 51
+	Epoch: 51 	Training Loss: 5.066335 	Validation Loss: 2.695802
+	Time: 100.81603789329529
+	0.00014989025404881537
+	Epoch #: 52
+	Epoch: 52 	Training Loss: 5.150186 	Validation Loss: 2.629852
+	Time: 99.65543723106384
+	0.00014239574134637458
+	Epoch #: 53
+	Epoch: 53 	Training Loss: 5.056933 	Validation Loss: 2.570701
+	Validation loss decreased (2.600804 --> 2.570701).  Saving model ...
+	Time: 102.05468344688416
+	0.00013527595427905584
+	Epoch #: 54
+	Epoch: 54 	Training Loss: 5.127764 	Validation Loss: 2.668725
+	Time: 100.71050691604614
+	0.00012851215656510304
+	Epoch #: 55
+	Epoch: 55 	Training Loss: 4.979237 	Validation Loss: 2.821051
+	Time: 99.03011465072632
+	0.00012208654873684788
+	Epoch #: 56
+	Epoch: 56 	Training Loss: 4.841175 	Validation Loss: 2.655679
+	Time: 106.60914134979248
+	0.00011598222130000548
+	Epoch #: 57
+	Epoch: 57 	Training Loss: 5.114641 	Validation Loss: 2.960266
+	Time: 99.7274022102356
+	0.00011018311023500519
+	Epoch #: 58
+	Epoch: 58 	Training Loss: 5.144984 	Validation Loss: 2.568586
+	Validation loss decreased (2.570701 --> 2.568586).  Saving model ...
+	Time: 103.45727920532227
+	0.00010467395472325493
+	Epoch #: 59
+	Epoch: 59 	Training Loss: 4.759023 	Validation Loss: 2.522795
+	Validation loss decreased (2.568586 --> 2.522795).  Saving model ...
+	Time: 116.18326473236084
+	9.944025698709218e-05
+	Epoch #: 60
+	Epoch: 60 	Training Loss: 4.860356 	Validation Loss: 2.559046
+	Time: 100.33261156082153
+	Operation Complete
+}
+
+______________________________________________________________________________________
+6/17/20
+# scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma = 0.95)
+10000 files; 80 epochs; Scheduler works only after epoch 13
+
+0.001
+Epoch #: 1
+Epoch: 1 	Training Loss: 32.479149 	Validation Loss: 18.438254
+Validation loss decreased (inf --> 18.438254).  Saving model ...
+Time: 321.99108815193176
+0.001
+Epoch #: 2
+Epoch: 2 	Training Loss: 19.315718 	Validation Loss: 13.332663
+Validation loss decreased (18.438254 --> 13.332663).  Saving model ...
+Time: 292.05774688720703
+0.001
+Epoch #: 3
+Epoch: 3 	Training Loss: 14.216205 	Validation Loss: 12.387862
+Validation loss decreased (13.332663 --> 12.387862).  Saving model ...
+Time: 290.67993903160095
+0.001
+Epoch #: 4
+Epoch: 4 	Training Loss: 12.213993 	Validation Loss: 11.615111
+Validation loss decreased (12.387862 --> 11.615111).  Saving model ...
+Time: 289.8032970428467
+0.001
+Epoch #: 5
+Epoch: 5 	Training Loss: 11.103815 	Validation Loss: 8.429484
+Validation loss decreased (11.615111 --> 8.429484).  Saving model ...
+Time: 285.5551416873932
+0.001
+Epoch #: 6
+Epoch: 6 	Training Loss: 10.855541 	Validation Loss: 9.946752
+Time: 284.94676971435547
+0.001
+Epoch #: 7
+Epoch: 7 	Training Loss: 9.846962 	Validation Loss: 8.535888
+Time: 285.6992619037628
+0.001
+Epoch #: 8
+Epoch: 8 	Training Loss: 8.929807 	Validation Loss: 10.018748
+Time: 287.01124691963196
+0.001
+Epoch #: 9
+Epoch: 9 	Training Loss: 9.172509 	Validation Loss: 6.085425
+Validation loss decreased (8.429484 --> 6.085425).  Saving model ...
+Time: 284.5109353065491
+0.001
+Epoch #: 10
+Epoch: 10 	Training Loss: 8.861782 	Validation Loss: 7.345788
+Time: 283.9165244102478
+0.001
+Epoch #: 11
+Epoch: 11 	Training Loss: 8.400115 	Validation Loss: 5.430472
+Validation loss decreased (6.085425 --> 5.430472).  Saving model ...
+Time: 281.51296734809875
+0.001
+Epoch #: 12
+Epoch: 12 	Training Loss: 8.769052 	Validation Loss: 5.421674
+Validation loss decreased (5.430472 --> 5.421674).  Saving model ...
+Time: 283.80781507492065
+0.001
+Epoch #: 13
+Epoch: 13 	Training Loss: 8.343498 	Validation Loss: 5.759371
+Time: 283.5614740848541
+0.00095
+Epoch #: 14
+Epoch: 14 	Training Loss: 8.261804 	Validation Loss: 5.067553
+Validation loss decreased (5.421674 --> 5.067553).  Saving model ...
+Time: 283.2129330635071
+0.0009025
+Epoch #: 15
+Epoch: 15 	Training Loss: 7.900430 	Validation Loss: 6.341468
+Time: 282.6189956665039
+0.000857375
+Epoch #: 16
+Epoch: 16 	Training Loss: 7.393464 	Validation Loss: 9.179598
+Time: 282.6629283428192
+0.0008145062499999999
+Epoch #: 17
+Epoch: 17 	Training Loss: 7.767712 	Validation Loss: 4.607958
+Validation loss decreased (5.067553 --> 4.607958).  Saving model ...
+Time: 282.5561640262604
+0.0007737809374999998
+Epoch #: 18
+Epoch: 18 	Training Loss: 7.058718 	Validation Loss: 5.140708
+Time: 283.4487769603729
+0.0007350918906249997
+Epoch #: 19
+Epoch: 19 	Training Loss: 7.131129 	Validation Loss: 5.522885
+Time: 283.09174609184265
+0.0006983372960937497
+Epoch #: 20
+Epoch: 20 	Training Loss: 6.856896 	Validation Loss: 5.569865
+Time: 283.4886829853058
+0.0006634204312890621
+Epoch #: 21
+Epoch: 21 	Training Loss: 6.993207 	Validation Loss: 4.326087
+Validation loss decreased (4.607958 --> 4.326087).  Saving model ...
+Time: 282.8723347187042
+0.000630249409724609
+Epoch #: 22
+Epoch: 22 	Training Loss: 6.670352 	Validation Loss: 4.554988
+Time: 282.8015081882477
+0.0005987369392383785
+Epoch #: 23
+Epoch: 23 	Training Loss: 6.753059 	Validation Loss: 4.458985
+Time: 282.4793698787689
+0.0005688000922764595
+Epoch #: 24
+Epoch: 24 	Training Loss: 6.404442 	Validation Loss: 6.630673
+Time: 282.7391815185547
+0.0005403600876626365
+Epoch #: 25
+Epoch: 25 	Training Loss: 6.342648 	Validation Loss: 4.137592
+Validation loss decreased (4.326087 --> 4.137592).  Saving model ...
+Time: 280.38872838020325
+0.0005133420832795047
+Epoch #: 26
+Epoch: 26 	Training Loss: 6.230717 	Validation Loss: 3.860999
+Validation loss decreased (4.137592 --> 3.860999).  Saving model ...
+Time: 282.6334810256958
+0.00048767497911552944
+Epoch #: 27
+Epoch: 27 	Training Loss: 6.129110 	Validation Loss: 4.054347
+Time: 282.68781208992004
+0.00046329123015975297
+Epoch #: 28
+Epoch: 28 	Training Loss: 6.053614 	Validation Loss: 3.554978
+Validation loss decreased (3.860999 --> 3.554978).  Saving model ...
+Time: 282.37066078186035
+0.0004401266686517653
+Epoch #: 29
+Epoch: 29 	Training Loss: 6.055952 	Validation Loss: 3.675113
+Time: 282.73770928382874
+0.00041812033521917703
+Epoch #: 30
+Epoch: 30 	Training Loss: 5.740579 	Validation Loss: 4.273275
+Time: 282.5307378768921
+0.00039721431845821814
+Epoch #: 31
+Epoch: 31 	Training Loss: 5.685022 	Validation Loss: 4.219864
+Time: 283.425345659256
+0.0003773536025353072
+Epoch #: 32
+Epoch: 32 	Training Loss: 5.758920 	Validation Loss: 3.625804
+Time: 283.05333948135376
+0.0003584859224085418
+Epoch #: 33
+Epoch: 33 	Training Loss: 5.538815 	Validation Loss: 3.717650
+Time: 282.07046341896057
+0.0003405616262881147
+Epoch #: 34
+Epoch: 34 	Training Loss: 5.505910 	Validation Loss: 3.377905
+Validation loss decreased (3.554978 --> 3.377905).  Saving model ...
+Time: 282.5776295661926
+0.00032353354497370894
+Epoch #: 35
+Epoch: 35 	Training Loss: 5.551858 	Validation Loss: 5.054396
+Time: 282.5157768726349
+0.00030735686772502346
+Epoch #: 36
+Epoch: 36 	Training Loss: 5.430602 	Validation Loss: 3.334093
+Validation loss decreased (3.377905 --> 3.334093).  Saving model ...
+Time: 282.41604447364807
+0.00029198902433877225
+Epoch #: 37
+Epoch: 37 	Training Loss: 5.530145 	Validation Loss: 3.274737
+Validation loss decreased (3.334093 --> 3.274737).  Saving model ...
+Time: 284.0571620464325
+0.00027738957312183364
+Epoch #: 38
+Epoch: 38 	Training Loss: 5.481096 	Validation Loss: 3.204594
+Validation loss decreased (3.274737 --> 3.204594).  Saving model ...
+Time: 283.24732780456543
+0.0002635200944657419
+Epoch #: 39
+Epoch: 39 	Training Loss: 5.174910 	Validation Loss: 3.352734
+Time: 283.4208507537842
+0.0002503440897424548
+Epoch #: 40
+Epoch: 40 	Training Loss: 5.129987 	Validation Loss: 3.403467
+Time: 282.8648455142975
+0.00023782688525533205
+Epoch #: 41
+Epoch: 41 	Training Loss: 5.078886 	Validation Loss: 3.166307
+Validation loss decreased (3.204594 --> 3.166307).  Saving model ...
+Time: 283.15957617759705
+0.00022593554099256544
+Epoch #: 42
+Epoch: 42 	Training Loss: 5.079040 	Validation Loss: 3.042314
+Validation loss decreased (3.166307 --> 3.042314).  Saving model ...
+Time: 281.1474392414093
+0.00021463876394293716
+Epoch #: 43
+Epoch: 43 	Training Loss: 5.038626 	Validation Loss: 3.146543
+Time: 283.4178719520569
+0.0002039068257457903
+Epoch #: 44
+Epoch: 44 	Training Loss: 5.109059 	Validation Loss: 3.030347
+Validation loss decreased (3.042314 --> 3.030347).  Saving model ...
+Time: 282.7083764076233
+0.00019371148445850077
+Epoch #: 45
+Epoch: 45 	Training Loss: 5.045631 	Validation Loss: 3.221960
+Time: 284.6276228427887
+0.00018402591023557573
+Epoch #: 46
+Epoch: 46 	Training Loss: 4.860340 	Validation Loss: 3.093637
+Time: 283.00197172164917
+0.00017482461472379692
+Epoch #: 47
+Epoch: 47 	Training Loss: 5.082857 	Validation Loss: 3.201638
+Time: 283.82377314567566
+0.00016608338398760707
+Epoch #: 48
+Epoch: 48 	Training Loss: 5.062406 	Validation Loss: 3.021679
+Validation loss decreased (3.030347 --> 3.021679).  Saving model ...
+Time: 283.5235929489136
+0.0001577792147882267
+Epoch #: 49
+Epoch: 49 	Training Loss: 4.867155 	Validation Loss: 3.011823
+Validation loss decreased (3.021679 --> 3.011823).  Saving model ...
+Time: 283.7160642147064
+0.00014989025404881537
+Epoch #: 50
+Epoch: 50 	Training Loss: 4.833899 	Validation Loss: 3.005716
+Validation loss decreased (3.011823 --> 3.005716).  Saving model ...
+Time: 283.3415856361389
+0.00014239574134637458
+Epoch #: 51
+Epoch: 51 	Training Loss: 4.906238 	Validation Loss: 3.200149
+Time: 283.9215292930603
+0.00013527595427905584
+Epoch #: 52
+Epoch: 52 	Training Loss: 4.575137 	Validation Loss: 2.969485
+Validation loss decreased (3.005716 --> 2.969485).  Saving model ...
+Time: 283.97837948799133
+0.00012851215656510304
+Epoch #: 53
+Epoch: 53 	Training Loss: 4.774934 	Validation Loss: 3.230105
+Time: 283.91353273391724
+0.00012208654873684788
+Epoch #: 54
+Epoch: 54 	Training Loss: 4.654620 	Validation Loss: 2.978026
+Time: 282.59607195854187
+0.00011598222130000548
+Epoch #: 55
+Epoch: 55 	Training Loss: 4.681868 	Validation Loss: 2.976222
+Time: 283.2104136943817
+0.00011018311023500519
+Epoch #: 56
+Epoch: 56 	Training Loss: 4.702522 	Validation Loss: 2.916598
+Validation loss decreased (2.969485 --> 2.916598).  Saving model ...
+Time: 286.3949112892151
+0.00010467395472325493
+Epoch #: 57
+Epoch: 57 	Training Loss: 4.690874 	Validation Loss: 2.946921
+Time: 296.62853264808655
+9.944025698709218e-05
+Epoch #: 58
+Epoch: 58 	Training Loss: 4.751392 	Validation Loss: 3.089052
+Time: 284.33043384552
+9.446824413773756e-05
+Epoch #: 59
+Epoch: 59 	Training Loss: 4.549066 	Validation Loss: 3.006240
+Time: 287.94873905181885
+8.974483193085068e-05
+Epoch #: 60
+Epoch: 60 	Training Loss: 4.592934 	Validation Loss: 2.965395
+Time: 285.50430393218994
+8.525759033430814e-05
+Epoch #: 61
+Epoch: 61 	Training Loss: 4.687109 	Validation Loss: 2.960809
+Time: 283.68015813827515
+8.099471081759274e-05
+Epoch #: 62
+Epoch: 62 	Training Loss: 4.488029 	Validation Loss: 2.946813
+Time: 283.4069061279297
+7.69449752767131e-05
+Epoch #: 63
+Epoch: 63 	Training Loss: 4.666859 	Validation Loss: 3.005525
+Time: 284.45461916923523
+7.309772651287744e-05
+Epoch #: 64
+Epoch: 64 	Training Loss: 4.575542 	Validation Loss: 2.878507
+Validation loss decreased (2.916598 --> 2.878507).  Saving model ...
+Time: 285.78504848480225
+6.944284018723356e-05
+Epoch #: 65
+Epoch: 65 	Training Loss: 4.443102 	Validation Loss: 2.917013
+Time: 284.7144079208374
+6.597069817787189e-05
+Epoch #: 66
+Epoch: 66 	Training Loss: 4.533816 	Validation Loss: 2.910021
+Time: 282.50031304359436
+6.267216326897829e-05
+Epoch #: 67
+Epoch: 67 	Training Loss: 4.390647 	Validation Loss: 2.867172
+Validation loss decreased (2.878507 --> 2.867172).  Saving model ...
+Time: 283.68314933776855
+5.953855510552937e-05
+Epoch #: 68
+Epoch: 68 	Training Loss: 4.396111 	Validation Loss: 2.888912
+Time: 284.5458414554596
+5.65616273502529e-05
+Epoch #: 69
+Epoch: 69 	Training Loss: 4.282528 	Validation Loss: 2.889601
+Time: 283.9998097419739
+5.373354598274025e-05
+Epoch #: 70
+Epoch: 70 	Training Loss: 4.410373 	Validation Loss: 3.009899
+Time: 283.92949056625366
+5.104686868360323e-05
+Epoch #: 71
+Epoch: 71 	Training Loss: 4.618376 	Validation Loss: 2.967542
+Time: 283.6572353839874
+4.849452524942307e-05
+Epoch #: 72
+Epoch: 72 	Training Loss: 4.461193 	Validation Loss: 2.961474
+Time: 283.83374643325806
+4.606979898695191e-05
+Epoch #: 73
+Epoch: 73 	Training Loss: 4.342232 	Validation Loss: 2.912901
+Time: 283.6362907886505
+4.376630903760431e-05
+Epoch #: 74
+Epoch: 74 	Training Loss: 4.468287 	Validation Loss: 2.813594
+Validation loss decreased (2.867172 --> 2.813594).  Saving model ...
+Time: 283.2503066062927
+4.157799358572409e-05
+Epoch #: 75
+Epoch: 75 	Training Loss: 4.588688 	Validation Loss: 2.801594
+Validation loss decreased (2.813594 --> 2.801594).  Saving model ...
+Time: 283.1838400363922
+3.9499093906437885e-05
+Epoch #: 76
+Epoch: 76 	Training Loss: 4.443050 	Validation Loss: 2.806916
+Time: 283.90408062934875
+3.752413921111599e-05
+Epoch #: 77
+Epoch: 77 	Training Loss: 4.429994 	Validation Loss: 2.860445
+Time: 283.29518723487854
+3.564793225056019e-05
+Epoch #: 78
+Epoch: 78 	Training Loss: 4.263925 	Validation Loss: 2.838020
+Time: 284.18531227111816
+3.3865535638032174e-05
+Epoch #: 79
+Epoch: 79 	Training Loss: 4.431268 	Validation Loss: 2.804951
+Time: 282.8538739681244
+3.2172258856130564e-05
+Epoch #: 80
+Epoch: 80 	Training Loss: 4.510870 	Validation Loss: 2.834522
+Time: 283.7365460395813
+Operation Complete
+
+Output of network:	 tensor([20.8082, 17.0183,  0.1386], device='cuda:0')
+Target Values:		 tensor([22.8117, 16.7808,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([ 0.2972,  0.1452, 12.0078], device='cuda:0')
+Target Values:		 tensor([ 0.0000,  0.0000, 10.7323], device='cuda:0') 
+
+Output of network:	 tensor([4.1476, 0.2715, 2.0667], device='cuda:0')
+Target Values:		 tensor([2.5870, 0.0000, 0.0000], device='cuda:0') 
+
+Output of network:	 tensor([0.2193, 8.3218, 0.2957], device='cuda:0')
+Target Values:		 tensor([ 0.0000, 10.7354,  0.0000], device='cuda:0') 
+
+Output of network:	 tensor([16.8574, 19.8560,  0.5122], device='cuda:0')
+Target Values:		 tensor([18.2846, 17.7537,  0.0000], device='cuda:0') 
+
+Test Loss (mean squared error): 0.470995
+
+Time: 53.240554332733154
