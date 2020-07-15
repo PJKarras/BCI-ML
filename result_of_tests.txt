@@ -1323,3 +1323,54 @@ Target Values:		 tensor([18.2846, 17.7537,  0.0000], device='cuda:0')
 Test Loss (mean squared error): 0.470995
 
 Time: 53.240554332733154
+
+
+
+7/14/20 using old file nmto github
+0.001
+Epoch #: 1
+Epoch: 1 	Training Loss: 33.547521 	Validation Loss: 20.353589
+Validation loss decreased (inf --> 20.353589).  Saving model ...
+Time: 132.03830361366272
+0.001
+Epoch #: 2
+Epoch: 2 	Training Loss: 21.656882 	Validation Loss: 14.847889
+Validation loss decreased (20.353589 --> 14.847889).  Saving model ...
+Time: 111.2990448474884
+0.001
+Epoch #: 3
+Epoch: 3 	Training Loss: 17.660532 	Validation Loss: 14.844669
+Validation loss decreased (14.847889 --> 14.844669).  Saving model ...
+Time: 103.46278858184814
+0.001
+Epoch #: 4
+Epoch: 4 	Training Loss: 14.262124 	Validation Loss: 9.442872
+Validation loss decreased (14.844669 --> 9.442872).  Saving model ...
+Time: 100.89021515846252
+0.001
+Epoch #: 5
+Epoch: 5 	Training Loss: 11.413111 	Validation Loss: 6.657123
+Validation loss decreased (9.442872 --> 6.657123).  Saving model ...
+Time: 101.15017938613892
+0.001
+Epoch #: 6
+Epoch: 6 	Training Loss: 9.579358 	Validation Loss: 7.135753
+Time: 101.48720741271973
+0.001
+Epoch #: 7
+Epoch: 7 	Training Loss: 8.351702 	Validation Loss: 9.187856
+Time: 100.91819977760315
+0.001
+Epoch #: 8
+Epoch: 8 	Training Loss: 7.864584 	Validation Loss: 12.043081
+Time: 101.3837206363678
+0.001
+Epoch #: 9
+Epoch: 9 	Training Loss: 7.428787 	Validation Loss: 5.143278
+Validation loss decreased (6.657123 --> 5.143278).  Saving model ...
+Time: 101.56834554672241
+0.001
+Epoch #: 10
+Epoch: 10 	Training Loss: 6.727146 	Validation Loss: 5.498346
+Time: 103.00322437286377
+Operation Complete
