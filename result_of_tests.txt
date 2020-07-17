@@ -1374,3 +1374,70 @@ Epoch #: 10
 Epoch: 10 	Training Loss: 6.727146 	Validation Loss: 5.498346
 Time: 103.00322437286377
 Operation Complete
+
+Epoch #: 1
+Epoch: 1 	Training Loss: 1.278686 	Validation Loss: 1.275906
+Validation loss decreased (12.592356 --> 1.275906).  Saving model ...
+Time: 334.5129337310791
+LR: 0.00912673
+Epoch #: 2
+Epoch: 2 	Training Loss: 1.277148 	Validation Loss: 1.276371
+Time: 331.70933532714844
+LR: 0.00912673
+Epoch #: 3
+Epoch: 3 	Training Loss: 1.278213 	Validation Loss: 1.274734
+Validation loss decreased (1.275906 --> 1.274734).  Saving model ...
+Time: 333.4110314846039
+LR: 0.00912673
+Epoch #: 4
+Epoch: 4 	Training Loss: 1.272941 	Validation Loss: 1.275420
+Time: 331.78168988227844
+LR: 0.00912673
+Epoch #: 5
+Epoch: 5 	Training Loss: 1.277289 	Validation Loss: 1.278283
+Time: 333.3310523033142
+LR: 0.00912673
+Epoch #: 6
+Epoch: 6 	Training Loss: 1.274227 	Validation Loss: 1.277931
+Time: 332.5019884109497
+LR: 0.00912673
+Epoch #: 7
+Epoch: 7 	Training Loss: 1.272614 	Validation Loss: 1.274140
+Validation loss decreased (1.274734 --> 1.274140).  Saving model ...
+Time: 333.97899651527405
+LR: 0.00912673
+Epoch #: 8
+Epoch: 8 	Training Loss: 1.275852 	Validation Loss: 1.275510
+Time: 332.465651512146
+LR: 0.00912673
+Epoch #: 9
+Epoch: 9 	Training Loss: 1.274781 	Validation Loss: 1.273803
+Validation loss decreased (1.274140 --> 1.273803).  Saving model ...
+Time: 334.10793900489807
+LR: 0.00912673
+Epoch #: 10
+Epoch: 10 	Training Loss: 1.275631 	Validation Loss: 1.274601
+Time: 333.0825026035309
+LR: 0.00912673
+Epoch #: 11
+Epoch: 11 	Training Loss: 1.274777 	Validation Loss: 1.274951
+Time: 333.38790464401245
+LR: 0.00912673
+Epoch #: 12
+Epoch: 12 	Training Loss: 1.273508 	Validation Loss: 1.278710
+Time: 341.2330975532532
+LR: 0.00912673
+Epoch #: 13
+Epoch: 13 	Training Loss: 1.274257 	Validation Loss: 1.271635
+Validation loss decreased (1.273803 --> 1.271635).  Saving model ...
+Time: 359.04664182662964
+LR: 0.00912673
+Epoch #: 14
+Epoch: 14 	Training Loss: 1.278101 	Validation Loss: 1.275491
+Time: 347.28511786460876
+LR: 0.00912673
+Epoch #: 15
+Epoch: 15 	Training Loss: 1.273049 	Validation Loss: 1.277107
+Time: 337.0023386478424
+LR: 0.00912673
+Operation Complete
