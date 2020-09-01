@@ -14,8 +14,9 @@
 # Set WD to location of script
   setwd("C:/Users/Peter/Desktop/Thermo_R_Code/FinalThermo")
 
-
+# Package that does the .seq -> .csv conversion
 install.packages("C:/Users/Peter/Desktop/Thermo_R_Code/Thermo/thermocamTools_0.1.tar.gz", repos = NULL, type = "source")
+# Package that makes things go faster (pretty sure this is the "fwrite" function)
 install.packages("data.table", 
                  repos = "https://Rdatatable.github.io/data.table", type = "source")
 install.packages("stringr")
@@ -33,7 +34,7 @@ library(data.table)
 seqfile <- list.files(path = "C:/Users/Peter/Desktop/Thermo_R_Code/FinalThermo/rawdata", full.names = TRUE, recursive = TRUE, pattern = ".seq")
 head(seqfile)
     
-    
+# For each file go through and convert to CSV and save
 for(val in seqfile)
 {
   # read thermocam image and save as object of "matrix" type
