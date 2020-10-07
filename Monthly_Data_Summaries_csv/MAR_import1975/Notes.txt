@@ -1,0 +1,1 @@
+This data was trained off of march and may, testing for april shows good results but otherwise no
