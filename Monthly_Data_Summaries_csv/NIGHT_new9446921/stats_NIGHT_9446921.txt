@@ -1,2 +1,3 @@
 Epochs: 120
 Batch Size: 6
+Time 2:00pm-8:00pm
