@@ -1,0 +1,4 @@
+Model Path:C:/Users/Peter/Desktop/Thermo_R_Code/FinalThermo/new/BCI-ML/Monthly_Data_Summaries_csv/DAYTIMEcopy_new8941230/model_BCI_DAYTIMEcopy_4-220135132166935.pt
+Epochs: 100
+Batch Size: 9
+Test Loss (mean squared error): 5.339243

@@ -1,0 +1,3 @@
+Model Path:C:/Users/Peter/Desktop/Thermo_R_Code/FinalThermo/new/BCI-ML/Monthly_Data_Summaries_csv/AFTERcopy_new9639/model_BCI_AFTERcopy_20-672781634465448.ptEpochs: 100
+Batch Size: 9
+Test Loss (mean squared error): 11.771440

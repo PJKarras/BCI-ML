@@ -1,0 +1,4 @@
+Model Path:C:/Users/Peter/Desktop/Thermo_R_Code/FinalThermo/new/BCI-ML/Monthly_Data_Summaries_csv/MORNcopy_new5451543/model_BCI_MORNcopy_10-774931467372634.pt
+Epochs: 100
+Batch Size: 9
+Test Loss (mean squared error): 1.445450
