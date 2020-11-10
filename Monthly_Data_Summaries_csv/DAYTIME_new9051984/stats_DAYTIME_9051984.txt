@@ -1,0 +1,2 @@
+Epochs: 27
+Batch Size: 16
