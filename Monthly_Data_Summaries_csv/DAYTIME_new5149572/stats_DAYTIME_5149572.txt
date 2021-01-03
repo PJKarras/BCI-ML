@@ -1,0 +1,2 @@
+Epochs: 2
+Batch Size: 16
